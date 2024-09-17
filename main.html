@@ -42,14 +42,11 @@
       }
     }
 
-    // Example usage:
-    const myCat = new Cat("Siamese");
-    myCat.makeSound(); // Output: The Siamese makes a sound
-    myCat.purr();      // Output: purr
+    // Assigning classes to window object for Cypress tests
+    window.Animal = Animal;
+    window.Cat = Cat;
+    window.Dog = Dog;
 
-    const myDog = new Dog("Golden Retriever");
-    myDog.makeSound(); // Output: The Golden Retriever makes a sound
-    myDog.bark();      // Output: woof
   </script>
 </body>
 </html>
